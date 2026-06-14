@@ -17,18 +17,17 @@
    caption bersifat opsional.
    ─────────────────────────────────────────── */
 const photos = [
-  { src: "https://picsum.photos/seed/nad01/400/500", caption: "momen pertama ✨" },
-  { src: "https://picsum.photos/seed/nad02/360/480", caption: "senyummu indah 💕" },
-  { src: "https://picsum.photos/seed/nad03/420/320", caption: "kenangan bersama" },
-  { src: "https://picsum.photos/seed/nad04/300/400", caption: "tertawa lepas 🌸" },
-  { src: "https://picsum.photos/seed/nad05/380/500", caption: "momen kita" },
-  { src: "https://picsum.photos/seed/nad06/460/340", caption: "selalu bahagia ☀️" },
-  { src: "https://picsum.photos/seed/nad07/320/420", caption: "cerita kita" },
-  { src: "https://picsum.photos/seed/nad08/400/300", caption: "hari yang indah" },
-  { src: "https://picsum.photos/seed/nad09/360/460", caption: "kamu cantik 🌺" },
-  { src: "https://picsum.photos/seed/nad10/440/360", caption: "selalu bersama 💖" },
-  { src: "https://picsum.photos/seed/nad11/300/380", caption: "momen manis" },
-  { src: "https://picsum.photos/seed/nad12/400/440", caption: "terima kasih 🌷" },
+  { src: "assets/foto1.jpeg", caption: "momen pertama ✨" },
+  { src: "assets/foto2.jpeg", caption: "senyummu indah 💕" },
+  { src: "assets/foto3.jpeg", caption: "kenangan bersama" },
+  { src: "assets/foto4.jpeg", caption: "tertawa lepas 🌸" },
+  { src: "assets/foto5.jpeg", caption: "momen kita" },
+  { src: "assets/nadya1.jpeg", caption: "selalu bahagia ☀️" },
+  { src: "assets/nadya2.jpeg", caption: "cerita kita" },
+  { src: "assets/nadya3.jpeg", caption: "hari yang indah" },
+  { src: "assets/nadya4.jpeg", caption: "kamu cantik 🌺" },
+  { src: "assets/nadya5.jpeg", caption: "selalu bersama 💖" },
+  { src: "assets/nadya6.jpeg", caption: "momen manis" },
 ];
 
 /* ──────────────────────────────────────────────
@@ -328,7 +327,7 @@ window.handleEnter = handleEnter;
    ─────────────────────────────────────────── */
 function revealFooter() {
   const footer = document.getElementById("birthday-footer");
-  footer.classList.remove("hidden");
+  footer.classList.remove("hidden-footer");
 
   // Gunakan IntersectionObserver agar reveal saat elemen terlihat
   if ("IntersectionObserver" in window) {

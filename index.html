@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="theme-color" content="#fce4ec" />
+  <title>Happy Birthday, Nadyaa 🎂</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Lato:wght@300;400&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ============================
+       HALAMAN AWAL (Intro Screen)
+  =============================== -->
+  <div id="intro-screen">
+    <!-- Partikel hati & bintang (dihasilkan via JS) -->
+    <div id="particles-intro"></div>
+
+    <!-- Overlay lembut -->
+    <div class="intro-overlay"></div>
+
+    <!-- Konten tengah -->
+    <div class="intro-content">
+      <div class="intro-decoration top-left">✦</div>
+      <div class="intro-decoration top-right">✦</div>
+
+      <p class="intro-subtitle">ada seseorang spesial di sini...</p>
+      <h1 class="intro-title">Untuk kamu,<br/>si cantik ✨</h1>
+
+      <!-- Tombol utama -->
+      <button id="btn-enter" onclick="handleEnter()">
+        <span class="btn-inner">
+          <span class="btn-icon">🤔</span>
+          <span class="btn-text">Apakah ini Nadyaa?</span>
+        </span>
+        <span class="btn-ripple"></span>
+      </button>
+
+      <p class="intro-hint">tekan untuk membuka hadiah kamu</p>
+
+      <div class="intro-decoration bottom-left">✦</div>
+      <div class="intro-decoration bottom-right">✦</div>
+    </div>
+  </div>
+
+  <!-- ============================
+       FADE OVERLAY (transisi)
+  =============================== -->
+  <div id="fade-overlay"></div>
+
+  <!-- ============================
+       HALAMAN GALERI
+  =============================== -->
+  <div id="gallery-screen" class="hidden">
+
+    <!-- Partikel mengambang di galeri -->
+    <div id="particles-gallery"></div>
+
+    <!-- Header galeri -->
+    <header class="gallery-header">
+      <div class="header-line"></div>
+      <p class="header-eyebrow">memory wall</p>
+      <h2 class="header-title">Momen Kita ✦</h2>
+      <div class="header-line"></div>
+    </header>
+
+    <!-- Papan kenangan (scrapbook wall) -->
+    <main id="memory-wall">
+      <!-- Foto-foto dirender oleh JS -->
+    </main>
+
+    <!-- Pesan ulang tahun di bawah -->
+    <footer id="birthday-footer" class="hidden-footer">
+      <div class="footer-ornament">✦ ✦ ✦</div>
+      <p class="footer-sub">dari seseorang yang menyayangimu</p>
+      <h2 class="footer-title">Selamat Ulang Tahun,<br/>Nadyaa ❤️</h2>
+      <p class="footer-wish">
+        Semoga setiap harimu selalu dipenuhi<br/>
+        kebahagiaan, cinta, dan senyuman yang tulus.
+      </p>
+      <div class="footer-hearts">💕 💖 💕</div>
+    </footer>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
